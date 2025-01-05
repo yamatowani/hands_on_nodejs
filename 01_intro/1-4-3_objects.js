@@ -21,4 +21,18 @@ Object.values(obj2) //  [ 1, 2, 3]
 Object.entries(obj2) //[ [ 'propA', 1], [ 'propB', 2], [ 'propC', 3]]
 
 
+const price {
+  value: 100,
+  get withTax() {
+    return Math.floor(this.value * 1.1)
+  },
+  set withTax(withTax) {
+    this.value = Math.ceil(withTax / 1.1)
+  }
+}
 
+price.withTax
+price.withTax = 333
+
+price.withTax
+price.value
