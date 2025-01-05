@@ -64,3 +64,7 @@ class Bar extends Foo {
 
 const barInstance = new Bar(100)
 
+Foo.prototype
+Object.getOwnPropertyNames(Foo.prototype)
+Foo.prototype.publicMethod
+fooInstance.__proto__ === Foo.prototype
